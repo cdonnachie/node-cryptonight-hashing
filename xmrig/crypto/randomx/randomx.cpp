@@ -142,6 +142,12 @@ RandomX_ConfigurationGraft::RandomX_ConfigurationGraft()
   RANDOMX_FREQ_IROL_R = 3;
 }
 
+RandomX_ConfigurationSCash::RandomX_ConfigurationSCash()
+{
+	ArgonSalt = "RandomX-Scash\x01";
+	ArgonLanes = 1;
+}
+
 RandomX_ConfigurationBase::RandomX_ConfigurationBase()
 	: ArgonMemory(262144)
 	, CacheAccesses(8)
@@ -409,6 +415,7 @@ RandomX_ConfigurationSafex RandomX_SafexConfig;
 RandomX_ConfigurationKeva RandomX_KevaConfig;
 RandomX_ConfigurationScala RandomX_ScalaConfig;
 RandomX_ConfigurationGraft RandomX_GraftConfig;
+RandomX_ConfigurationSCash RandomX_SCashConfig;
 
 alignas(64) RandomX_ConfigurationBase RandomX_CurrentConfig;
 

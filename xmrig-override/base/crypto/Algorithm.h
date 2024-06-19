@@ -99,6 +99,7 @@ public:
 
         CN_GPU          = 0x631500ff,   // "cn/gpu"           CryptoNight-GPU (Ryo).
         RX_XLA          = 0x721211ff,   // "panthera"         Panthera (Scala2).
+        RX_SCASH        = 0x72151201,   // "rx/scash"         RandomSCASH (SCash).
     };
 
     enum Family : uint32_t {
